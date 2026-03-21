@@ -22,6 +22,10 @@ add_library(Parser
     src/Parser/pe_parser.cpp 
 )
 
+target_link_libraries(Parser 
+    Logger 
+)
+
 add_executable(PEParser
     src/main.cpp
 )
