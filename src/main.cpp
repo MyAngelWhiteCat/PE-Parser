@@ -8,5 +8,5 @@ int main() {
     peparser::Parser parser;
     auto curpath = std::filesystem::current_path();
     parser.Parse(curpath / "example.exe");
-
+    parser.Parse(curpath / "wrong_example");
 }
