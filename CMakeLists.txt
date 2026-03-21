@@ -18,8 +18,8 @@ target_link_libraries(Logger PUBLIC
 )
 
 add_library(Parser
-    src/parser/pe_parser.h
-    src/parser/pe_parser.cpp 
+    src/Parser/pe_parser.h
+    src/Parser/pe_parser.cpp 
 )
 
 add_executable(PEParser
@@ -28,4 +28,5 @@ add_executable(PEParser
 
 target_link_libraries(PEParser
     Logger
+    Parser
 )
